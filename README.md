@@ -46,16 +46,16 @@ one model, you still need 01–05 plus the base-forecast scripts for that model.
 
 | # | File | Description |
 |---|---|---|
-| 01 | `01_load_packages.R` | Attaches the four required packages: `HMDHFDplus`, `demography`, `ftsa`, `hdftsa`. |
-| 02 | `02_read_data.R` | Downloads rates and exposures from the Japanese Mortality Database, writes the plain-text copies into `read_data/`, and builds the `demogdata` objects for the national, 8 regional and 47 prefectural series by sex. Needs an internet connection; skip it if you are using the committed text files. |
-| 03 | `03_auxiliary_point.R` | Defines the MFTS model and the point-forecast helper routines shared by all base-forecast scripts. |
+| `01_load_packages.R` | Attaches the four required packages: `HMDHFDplus`, `demography`, `ftsa`, `hdftsa`. |
+| `02_read_data.R` | Downloads rates and exposures from the Japanese Mortality Database, writes the plain-text copies into `read_data/`, and builds the `demogdata` objects for the national, 8 regional and 47 prefectural series by sex. Needs an internet connection; skip it if you are using the committed text files. |
+| `03_auxiliary_point.R` | Defines the MFTS model and the point-forecast helper routines shared by all base-forecast scripts. |
 
 ### Base forecasts — shared helpers (04–05)
 
 | # | File | Description |
 |---|---|---|
-| 04 | `04_base_forecast_UFTS_fun.R` | Helper that converts UFTS forecasts into MAE and RMSE forecast errors over the expanding window. |
-| 05 | `05_base_forecast_MLFTS_fun.R` | Same for the MLFTS model, wrapping `MLFTS_model()` from `hdftsa`. |
+| `04_base_forecast_UFTS_fun.R` | Helper that converts UFTS forecasts into MAE and RMSE forecast errors over the expanding window. |
+| `05_base_forecast_MLFTS_fun.R` | Same for the MLFTS model, wrapping `MLFTS_model()` from `hdftsa`. |
 
 ### Base forecasts — UFTS (06–09)
 
