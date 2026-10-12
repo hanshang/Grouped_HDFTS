@@ -7,7 +7,8 @@
 # series forecasting with a group structure'.
 #
 # Run with the working directory set to the code_submission/ folder.
-# See README.md for the order in which the scripts must be run.
+# Scripts are numbered 01-51 in the order in which they must be run.
+# See README.md for a one-line description of each.
 # ----------------------------------------------------------------------------
 
 ##################

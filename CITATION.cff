@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: >-
+  Replication code for "High-dimensional functional time series forecasting
+  with a group structure"
+message: >-
+  If you use this software, please cite both the software and the associated
+  paper.
+type: software
+authors:
+  - family-names: Shang
+    given-names: Han Lin
+    email: hanlin.shang@mq.edu.au
+    affiliation: >-
+      Department of Actuarial Studies and Business Analytics,
+      Macquarie University
+    # TODO: add your ORCID, e.g. orcid: 'https://orcid.org/XXXX-XXXX-XXXX-XXXX'
+keywords:
+  - forecast reconciliation
+  - functional time series
+  - mortality forecasting
+  - grouped time series
+  - functional analysis of variance
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: >-
+    High-dimensional functional time series forecasting with a group structure
+  authors:
+    - family-names: Shang
+      given-names: Han Lin
+      affiliation: Macquarie University
+  year: 2026
+  notes: Working paper.

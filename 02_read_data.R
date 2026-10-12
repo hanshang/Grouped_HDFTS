@@ -11,14 +11,16 @@
 # series forecasting with a group structure'.
 #
 # Run with the working directory set to the code_submission/ folder.
-# See README.md for the order in which the scripts must be run.
+# Scripts are numbered 01-51 in the order in which they must be run.
+# See README.md for a one-line description of each.
 # ----------------------------------------------------------------------------
 
 # load R packages
 
 source("01_load_packages.R")
 
-# All raw text copies are written to, and read back from, read_data/.
+# The raw text copies are written to, and read back from, a read_data/
+# sub-folder, which this script creates on first run.
 project_root = getwd()
 data_dir = file.path(project_root, "read_data")
 dir.create(data_dir, showWarnings = FALSE)
