@@ -20,7 +20,7 @@ reconciled bottom-up and by optimal combination (OLS and WLS).
 Every `source()` path in the repository is relative to that folder.
 
 ```r
-setwd("path/to/code_submission")
+setwd("")
 ```
 
 **Every script is numbered in the order in which it must be run.** The scripts share a
