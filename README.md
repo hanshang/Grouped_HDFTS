@@ -61,56 +61,56 @@ one model, you still need 01–05 plus the base-forecast scripts for that model.
 
 | # | File | Description |
 |---|---|---|
-| 06 | `06_base_forecast_UFTS_ets_EVR.R` | UFTS base forecasts, ETS scores, number of components chosen by the EVR criterion. |
-| 07 | `07_base_forecast_UFTS_ets_K6.R` | UFTS base forecasts, ETS scores, components fixed at *O* = 6. |
-| 08 | `08_base_forecast_UFTS_arima_EVR.R` | UFTS base forecasts, ARIMA scores, components by the EVR criterion. |
-| 09 | `09_base_forecast_UFTS_arima_K6.R` | UFTS base forecasts, ARIMA scores, components fixed at *O* = 6. |
+| `06_base_forecast_UFTS_ets_EVR.R` | UFTS base forecasts, ETS scores, number of components chosen by the EVR criterion. |
+| `07_base_forecast_UFTS_ets_K6.R` | UFTS base forecasts, ETS scores, components fixed at *O* = 6. |
+| `08_base_forecast_UFTS_arima_EVR.R` | UFTS base forecasts, ARIMA scores, components by the EVR criterion. |
+| `09_base_forecast_UFTS_arima_K6.R` | UFTS base forecasts, ARIMA scores, components fixed at *O* = 6. |
 
 ### Base forecasts — MFTS (10–13)
 
 | # | File | Description |
 |---|---|---|
-| 10 | `10_base_forecast_MFTS_ets_EVR.R` | MFTS base forecasts, ETS scores, components by the EVR criterion. |
-| 11 | `11_base_forecast_MFTS_ets_K6.R` | MFTS base forecasts, ETS scores, components fixed at *O* = 6. |
-| 12 | `12_base_forecast_MFTS_arima_EVR.R` | MFTS base forecasts, ARIMA scores, components by the EVR criterion. |
-| 13 | `13_base_forecast_MFTS_arima_K6.R` | MFTS base forecasts, ARIMA scores, components fixed at *O* = 6. |
+| `10_base_forecast_MFTS_ets_EVR.R` | MFTS base forecasts, ETS scores, components by the EVR criterion. |
+| `11_base_forecast_MFTS_ets_K6.R` | MFTS base forecasts, ETS scores, components fixed at *O* = 6. |
+| `12_base_forecast_MFTS_arima_EVR.R` | MFTS base forecasts, ARIMA scores, components by the EVR criterion. |
+| `13_base_forecast_MFTS_arima_K6.R` | MFTS base forecasts, ARIMA scores, components fixed at *O* = 6. |
 
 ### Base forecasts — MLFTS (14–17)
 
 | # | File | Description |
 |---|---|---|
-| 14 | `14_base_forecast_MLFTS_EVR_ets.R` | MLFTS base forecasts, ETS scores, components by the EVR criterion. |
-| 15 | `15_base_forecast_MLFTS_K6_ets.R` | MLFTS base forecasts, ETS scores, components fixed at *O* = 6. |
-| 16 | `16_base_forecast_MLFTS_EVR_arima.R` | MLFTS base forecasts, ARIMA scores, components by the EVR criterion. |
-| 17 | `17_base_forecast_MLFTS_K6_arima.R` | MLFTS base forecasts, ARIMA scores, components fixed at *O* = 6. |
+| `14_base_forecast_MLFTS_EVR_ets.R` | MLFTS base forecasts, ETS scores, components by the EVR criterion. |
+| `15_base_forecast_MLFTS_K6_ets.R` | MLFTS base forecasts, ETS scores, components fixed at *O* = 6. |
+| `16_base_forecast_MLFTS_EVR_arima.R` | MLFTS base forecasts, ARIMA scores, components by the EVR criterion. |
+| `17_base_forecast_MLFTS_K6_arima.R` | MLFTS base forecasts, ARIMA scores, components fixed at *O* = 6. |
 
 ### Base forecasts — FANOVA and summaries (18–22)
 
 | # | File | Description |
 |---|---|---|
-| 18 | `18_base_forecast_OWFANOVA_ets.R` | One-way FANOVA plus functional factor model base forecasts, ETS scores. |
-| 19 | `19_base_forecast_OWFANOVA_arima.R` | One-way FANOVA plus functional factor model base forecasts, ARIMA scores. |
-| 20 | `20_base_forecast_TWFANOVA.R` | Two-way FANOVA base forecasts. Exploratory; results are not reported in the paper. |
-| 21 | `21_summary_results_ets.R` | Collects the ETS base-forecast errors across all methods and levels into **Table 2**. |
-| 22 | `22_summary_results_arima.R` | Collects the ARIMA base-forecast errors into **Table 4** (Appendix A). |
+| `18_base_forecast_OWFANOVA_ets.R` | One-way FANOVA plus functional factor model base forecasts, ETS scores. |
+| `19_base_forecast_OWFANOVA_arima.R` | One-way FANOVA plus functional factor model base forecasts, ARIMA scores. |
+| `20_base_forecast_TWFANOVA.R` | Two-way FANOVA base forecasts. Exploratory; results are not reported in the paper. |
+| `21_summary_results_ets.R` | Collects the ETS base-forecast errors across all methods and levels into **Table 2**. |
+| `22_summary_results_arima.R` | Collects the ARIMA base-forecast errors into **Table 4** (Appendix A). |
 
 ### Reconciliation setup (23–26)
 
 | # | File | Description |
 |---|---|---|
-| 23 | `23_Japan_population_at_risk_forecast.R` | Forecasts the exposure-to-risk ratios that populate the summing matrix at each horizon, treating the age-0 ratio separately. |
-| 24 | `24_Japan_S_mat.R` | Builds the summing matrix **S**<sub>t</sub> linking the 94 bottom-level series to all 168 series, using the forecast exposure ratios. |
-| 25 | `25_UFTS_BU_optim_fun.R` | The reconciliation engine: bottom-up, OLS and WLS optimal combination, plus the MAE and RMSE errors at every level of the group structure. Used by all reconciliation scripts. |
-| 26 | `26_base_forecast_MLFTS_forecasts_fun.R` | Helper that extracts fitted MLFTS forecast curves in the shape the reconciliation engine expects. |
+| `23_Japan_population_at_risk_forecast.R` | Forecasts the exposure-to-risk ratios that populate the summing matrix at each horizon, treating the age-0 ratio separately. |
+| `24_Japan_S_mat.R` | Builds the summing matrix **S**<sub>t</sub> linking the 94 bottom-level series to all 168 series, using the forecast exposure ratios. |
+| `25_UFTS_BU_optim_fun.R` | The reconciliation engine: bottom-up, OLS and WLS optimal combination, plus the MAE and RMSE errors at every level of the group structure. Used by all reconciliation scripts. |
+| `26_base_forecast_MLFTS_forecasts_fun.R` | Helper that extracts fitted MLFTS forecast curves in the shape the reconciliation engine expects. |
 
 ### Reconciliation — UFTS (27–30)
 
 | # | File | Description |
 |---|---|---|
-| 27 | `27_UFTS_BU_optim_ets_EVR.R` | Reconciles the UFTS (ETS, EVR) base forecasts; writes `figures/UFTS_EVR_ets_forecast_accuracy_by_level.pdf`. |
-| 28 | `28_UFTS_BU_optim_ets_K6.R` | Reconciles the UFTS (ETS, *O* = 6) base forecasts. |
-| 29 | `29_UFTS_BU_optim_arima_EVR.R` | Reconciles the UFTS (ARIMA, EVR) base forecasts. |
-| 30 | `30_UFTS_BU_optim_arima_K6.R` | Reconciles the UFTS (ARIMA, *O* = 6) base forecasts. |
+| `27_UFTS_BU_optim_ets_EVR.R` | Reconciles the UFTS (ETS, EVR) base forecasts; writes `figures/UFTS_EVR_ets_forecast_accuracy_by_level.pdf`. |
+| `28_UFTS_BU_optim_ets_K6.R` | Reconciles the UFTS (ETS, *O* = 6) base forecasts. |
+| `29_UFTS_BU_optim_arima_EVR.R` | Reconciles the UFTS (ARIMA, EVR) base forecasts. |
+| `30_UFTS_BU_optim_arima_K6.R` | Reconciles the UFTS (ARIMA, *O* = 6) base forecasts. |
 
 ### Reconciliation — MFTS (31–38)
 
@@ -118,37 +118,37 @@ Each variant assembles the base forecast values first, then reconciles them.
 
 | # | File | Description |
 |---|---|---|
-| 31 | `31_base_forecast_MFTS_values_ets_EVR_forecasts.R` | Assembles the MFTS (ETS, EVR) base forecast values into per-prefecture arrays. |
-| 32 | `32_MFTS_BU_optim_ets_EVR.R` | Reconciles them; writes `figures/MFTS_EVR_ets_forecast_accuracy_by_level.pdf`. |
-| 33 | `33_base_forecast_MFTS_values_ets_K6_forecasts.R` | Assembles the MFTS (ETS, *O* = 6) base forecast values. |
-| 34 | `34_MFTS_BU_optim_ets_K6.R` | Reconciles them. |
-| 35 | `35_base_forecast_MFTS_values_arima_EVR.R` | Assembles the MFTS (ARIMA, EVR) base forecast values. |
-| 36 | `36_MFTS_BU_optim_arima_EVR.R` | Reconciles them. |
-| 37 | `37_base_forecast_MFTS_values_arima_K6_forecasts.R` | Assembles the MFTS (ARIMA, *O* = 6) base forecast values. |
-| 38 | `38_MFTS_BU_optim_arima_K6.R` | Reconciles them. |
+| `31_base_forecast_MFTS_values_ets_EVR_forecasts.R` | Assembles the MFTS (ETS, EVR) base forecast values into per-prefecture arrays. |
+| `32_MFTS_BU_optim_ets_EVR.R` | Reconciles them; writes `figures/MFTS_EVR_ets_forecast_accuracy_by_level.pdf`. |
+| `33_base_forecast_MFTS_values_ets_K6_forecasts.R` | Assembles the MFTS (ETS, *O* = 6) base forecast values. |
+| `34_MFTS_BU_optim_ets_K6.R` | Reconciles them. |
+| `35_base_forecast_MFTS_values_arima_EVR.R` | Assembles the MFTS (ARIMA, EVR) base forecast values. |
+| `36_MFTS_BU_optim_arima_EVR.R` | Reconciles them. |
+| `37_base_forecast_MFTS_values_arima_K6_forecasts.R` | Assembles the MFTS (ARIMA, *O* = 6) base forecast values. |
+| `38_MFTS_BU_optim_arima_K6.R` | Reconciles them. |
 
 ### Reconciliation — MLFTS (39–46)
 
 | # | File | Description |
 |---|---|---|
-| 39 | `39_base_forecast_MLFTS_ets_EVR.R` | Assembles the MLFTS (ETS, EVR) base forecast values. |
-| 40 | `40_MLFTS_BU_optim_ets_EVR.R` | Reconciles them; writes `figures/MLFTS_EVR_ets_forecast_accuracy_by_level.pdf`. |
-| 41 | `41_base_forecast_MLFTS_ets_K6.R` | Assembles the MLFTS (ETS, *O* = 6) base forecast values. Originally named `base_forecast_MLFTS_arima_K6.R`; renamed because its contents are the ETS code. |
-| 42 | `42_MLFTS_BU_optim_ets_K6.R` | Reconciles them. |
-| 43 | `43_base_forecast_MLFTS_arima_EVR.R` | Assembles the MLFTS (ARIMA, EVR) base forecast values. |
-| 44 | `44_MLFTS_BU_optim_arima_EVR.R` | Reconciles them. |
-| 45 | `45_base_forecast_MLFTS_arima_K6.R` | Assembles the MLFTS (ARIMA, *O* = 6) base forecast values. |
-| 46 | `46_MLFTS_BU_optim_arima_K6.R` | Reconciles them. |
+| `39_base_forecast_MLFTS_ets_EVR.R` | Assembles the MLFTS (ETS, EVR) base forecast values. |
+| `40_MLFTS_BU_optim_ets_EVR.R` | Reconciles them; writes `figures/MLFTS_EVR_ets_forecast_accuracy_by_level.pdf`. |
+| `41_base_forecast_MLFTS_ets_K6.R` | Assembles the MLFTS (ETS, *O* = 6) base forecast values. Originally named `base_forecast_MLFTS_arima_K6.R`; renamed because its contents are the ETS code. |
+| `42_MLFTS_BU_optim_ets_K6.R` | Reconciles them. |
+| `43_base_forecast_MLFTS_arima_EVR.R` | Assembles the MLFTS (ARIMA, EVR) base forecast values. |
+| `44_MLFTS_BU_optim_arima_EVR.R` | Reconciles them. |
+| `45_base_forecast_MLFTS_arima_K6.R` | Assembles the MLFTS (ARIMA, *O* = 6) base forecast values. |
+| `46_MLFTS_BU_optim_arima_K6.R` | Reconciles them. |
 
 ### Reconciliation — FANOVA+FFM and final summary (47–51)
 
 | # | File | Description |
 |---|---|---|
-| 47 | `47_OWFANOVA_base_forecasts_ets_forecasts.R` | Assembles the FANOVA+FFM (ETS) base forecast values. |
-| 48 | `48_OWFANOVA_BU_optim_ets_K6.R` | Reconciles them; writes `figures/OWFANOVA_ets_forecast_accuracy_by_level.pdf`. |
-| 49 | `49_OWFANOVA_base_forecasts_arima_forecasts.R` | Assembles the FANOVA+FFM (ARIMA) base forecast values. |
-| 50 | `50_OWFANOVA_BU_optim_arima_K6.R` | Reconciles them. |
-| 51 | `51_summary_point_forecasts.R` | Collects the reconciled point-forecast summaries into **Table 3** (MAFE) and **Table 5** (RMSFE, Appendix C). |
+| `47_OWFANOVA_base_forecasts_ets_forecasts.R` | Assembles the FANOVA+FFM (ETS) base forecast values. |
+| `48_OWFANOVA_BU_optim_ets_K6.R` | Reconciles them; writes `figures/OWFANOVA_ets_forecast_accuracy_by_level.pdf`. |
+| `49_OWFANOVA_base_forecasts_arima_forecasts.R` | Assembles the FANOVA+FFM (ARIMA) base forecast values. |
+| `50_OWFANOVA_BU_optim_arima_K6.R` | Reconciles them. |
+| `51_summary_point_forecasts.R` | Collects the reconciled point-forecast summaries into **Table 3** (MAFE) and **Table 5** (RMSFE, Appendix C). |
 
 ---
 
